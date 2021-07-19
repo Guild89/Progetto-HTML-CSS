@@ -1,0 +1,42 @@
+.contenitore {
+    max-width: 1400px;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr,auto));
+    grid-auto-rows:auto;
+    gap: 10px;
+}
+.box {
+    background-color: bisque;
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+li {
+    padding: 10px;
+}
+#articolo {
+    padding: 20px;
+
+}
+#foto {
+    padding: 20px;
+}
+
+@media only screen and (min-width: 500px){
+    #menu {
+        grid-column: 1/4;
+    }
+    #foto {
+        grid-column: 1/1;
+    }
+    #articolo {
+        grid-column: 2/4;
+    }
+    #contatti {
+        grid-column: 1/4;
+    }
+    
+}
